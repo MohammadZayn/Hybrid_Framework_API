@@ -8,7 +8,7 @@
 
 
 import allure
-from Source_Content.All_in_one import *
+from Source_Content.Common_Passers import *
 
 class TestCRUDBooking:
     @allure.title("Test CRUD operation Update(PUT).")
@@ -36,7 +36,7 @@ class TestCRUDBooking:
         booking_id = get_booking_id
         token = create_token
         delete_url = R.patch_put_delete_url(booking_id=booking_id)
-        response = R.delete_requests(url=delete_url,headers=R.common_header_put_delete_patch_cookie(token=token),
-                                     auth=None,in_json=False)
+        response = R.delete_requests(url=delete_url, headers=R.common_header_put_delete_patch_cookie(token=token),
+                                     auth=None, in_json=False)
         R.verify_response_delete(response=response.text)
         R.verify_http_status_code(response_data=response, expect_data=201)

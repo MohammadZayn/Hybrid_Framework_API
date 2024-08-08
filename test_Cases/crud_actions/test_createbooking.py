@@ -1,6 +1,6 @@
 import allure
 import pytest
-from Source_Content.All_in_one import *
+from Source_Content.Common_Passers import *
 
 class Test_Create_Booking:
     @allure.title("#Test_Case -3")

@@ -1,5 +1,5 @@
 import pytest
-from Source_Content.All_in_one import R
+from Source_Content.Common_Passers import R
 
 
 @pytest.fixture(scope="session")
@@ -9,7 +9,6 @@ def create_token():
     R.verify_http_status_code(response_data=response, expect_data=200)
     R.verify_json_key_for_not_null_token(response.json()["token"])
     return response.json()["token"]
-
 
 @pytest.fixture(scope="session")
 def get_booking_id():
