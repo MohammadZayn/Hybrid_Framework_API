@@ -32,16 +32,27 @@ Hybrid_Framework_API/
 ├── requirements.txt
 └── README.md
 ```
-## How to Install Packages
-- pip install requests pytest pytest-html faker allure-pytest jsonschema
+## Installation
 
-## How to run your Testcase Parallel
-- pip install pytest-xdist
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YourUsername/Hybrid_Framework.git
+2. Navigate to the project directory:
+   ```bash
+   cd Heruko_Tc
+3. How to Install Packages
+   ```bash
+   pip install requests pytest pytest-html faker allure-pytest jsonschema
+4. How to run your Testcase Parallel
+   ```bash
+   pip install pytest-xdist
 
-## How to add the .gitignore File?
-- Copy the content from this to .gitignore file https://www.toptal.com/developers/gitignore/api/pycharm+all
+5. How to add the .gitignore File?
+   ```bash
+   Copy the content from this to .gitignore file https://www.toptal.com/developers/gitignore/api/pycharm+all
 
-## How to run the Basic Test with Allure report
-1. pytest 'location of the file' --alluredir=allure_result -s
-2. allure serve allure_resul
+6. How to run the Basic Test with Allure report
+   ```bash
+   1. pytest 'location of the file' --alluredir=allure_result -s
+   2. allure serve allure_resul
  
