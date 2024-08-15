@@ -73,7 +73,8 @@ Hybrid_Framework_API/
    - Configure the job to pull the code from the repository.
    - Add a build step to execute the test script using the command:
      ```bash
-     python -m filename.py -s tests
+     python -m pip install -r requirements.txt
+     python -m pytest
      ```
    - Configure email notifications for test results.
 4. Set up triggers: Schedule jobs or trigger them via webhooks on code commits.
@@ -113,7 +114,6 @@ Hybrid_Framework_API/
 2. Install the required package:
    ```bash
    pip install seleniumbase
-
 
 ## Contributing
 Contributions are welcome! Please create a pull request with a detailed description of the changes.
