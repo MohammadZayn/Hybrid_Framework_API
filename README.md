@@ -54,5 +54,20 @@ Hybrid_Framework_API/
 6. How to run the Basic Test with Allure report
    ```bash
    1. pytest 'location of the file' --alluredir=allure_result -s
-   2. allure serve allure_resul
- 
+   2. allure serve allure_result
+   
+## Best Practices
+- Follow the Page Object Model (POM) to separate test logic from UI logic.
+- Use data-driven testing for better coverage.
+- Implement cross-browser testing to ensure compatibility.
+  
+## Future Enhancements
+- Integrate with CI/CD tools like Jenkins.
+- Add mobile testing support using Appium.
+- Implement visual regression testing.
+
+## Contributing
+Contributions are welcome! Please create a pull request with a detailed description of the changes.
+
+### Contact
+For any inquiries or opportunities, feel free to reach out via MohammadShaik or email at mohammadshaik776@gmail.com.
