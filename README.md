@@ -56,18 +56,18 @@ Hybrid_Framework_API/
    1. pytest 'location of the file' --alluredir=allure_result -s
    2. allure serve allure_result
 
-# Best Practices for Automated Testing
+## Best Practices for Automated Testing
 
-## 1. Follow the Page Object Model (POM)
+### 1. Follow the Page Object Model (POM)
 
 The Page Object Model (POM) is a design pattern that helps in creating an object repository for web UI elements. It separates the test logic from the UI logic, making the code more maintainable and reusable.
 
-### Benefits:
+#### Benefits:
 - **Separation of Concerns:** Keeps test code clean and easy to understand by separating UI interactions from the test logic.
 - **Reusability:** Common operations on UI elements are encapsulated in methods within the page objects, allowing you to reuse them across different tests.
 - **Maintainability:** Changes to UI elements need only be updated in one place, the page object, which simplifies maintenance when the UI changes.
 
-### Implementation Tips:
+#### Implementation Tips:
 - Create a separate class for each page of the application.
 - Define locators for UI elements and wrap them in methods that perform actions on those elements.
 - Avoid putting test assertions within the page objects; these should remain in the test scripts.
@@ -86,15 +86,15 @@ class LoginPage:
         self.password_input.send_keys(password)
         self.login_button.click()
 ```
-## 2. Use Data-Driven Testing
+### 2. Use Data-Driven Testing
 Data-driven testing involves running a test script with multiple sets of data inputs to ensure comprehensive test coverage. This approach allows you to validate how the application behaves with different inputs, edge cases, and data scenarios.
 
-### Benefits:
+#### Benefits:
 - **Increased Test Coverage:** Allows testing of multiple scenarios and edge cases without duplicating test code.
 - **Efficiency:** Reduces the number of test scripts needed, as the same script can run with different data sets.
 - **Ease of Maintenance:** Test data can be managed separately from test scripts, making it easier to update or expand test scenarios.
 
-### Implementation Tips:
+#### Implementation Tips:
 - Store test data in external files such as CSV, JSON, or Excel.
 - Use a framework that supports parameterized testing to feed the test data into your scripts.
 - Ensure that your tests validate expected results for each data set.
@@ -114,10 +114,10 @@ def test_login(username, password):
     assert "Welcome" in driver.page_source
 ```
 
-## 3. Implement Cross-Browser Testing
+### 3. Implement Cross-Browser Testing
 Cross-browser testing ensures that your application works correctly across different web browsers and versions. It's crucial for providing a consistent user experience and catching browser-specific issues.
 
-### Benefits:
+#### Benefits:
 **Compatibility:** Ensures that your application is functional across multiple browsers, reducing the risk of browser-specific bugs.
 **User Experience:** Helps maintain a consistent experience for users, regardless of their preferred browser.
 **Quality Assurance:** Early detection of browser-specific issues helps in delivering a more robust application.
