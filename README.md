@@ -203,4 +203,4 @@ for browser in browsers:
 Contributions are welcome! Please create a pull request with a detailed description of the changes.
 
 ### Contact
-For any inquiries or opportunities, feel free to reach out via MohammadShaik or email at mohammadshaik776@gmail.com.
+For any inquiries or opportunities, feel free to reach out via www.linkedin.com/in/mohammadzayn or email at mohammadshaik776@gmail.com.
