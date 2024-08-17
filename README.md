@@ -73,7 +73,7 @@ The Page Object Model (POM) is a design pattern that helps in creating an object
 - Avoid putting test assertions within the page objects; these should remain in the test scripts.
 
 ```python
-# Example of a Page Object in Python
+Page Object in Python
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
@@ -99,8 +99,7 @@ Data-driven testing involves running a test script with multiple sets of data in
 - Use a framework that supports parameterized testing to feed the test data into your scripts.
 - Ensure that your tests validate expected results for each data set.
 ```python
-Copy code
-# Example of Data-Driven Test in Python using pytest
+Data-Driven Test in Python using pytest
 import pytest
 
 @pytest.mark.parametrize("username, password", [
@@ -127,8 +126,7 @@ Cross-browser testing ensures that your application works correctly across diffe
 - Automate tests for popular browsers like Chrome, Firefox, Safari, and Edge.
 - Prioritize testing on browsers and versions most commonly used by your audience.
 ```python
-Copy code
-# Example of Cross-Browser Testing in Python with Selenium
+Cross-Browser Testing in Python with Selenium
 from selenium import webdriver
 
 browsers = ['chrome', 'firefox', 'safari']
