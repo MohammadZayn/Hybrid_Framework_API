@@ -10,7 +10,6 @@ def test_Try_To_Update_A_Deleted_ID(Delete_Booking, Put_Booking):
     booking_id = Delete_Booking
     print(booking_id)
     baseurl = "https://restful-booker.herokuapp.com/booking/" + booking_id
-    
     try:
        response = Put_Booking(baseurl)
        response.raise_for_status()
