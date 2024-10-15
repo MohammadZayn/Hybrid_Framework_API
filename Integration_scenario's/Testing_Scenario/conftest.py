@@ -105,7 +105,7 @@ def Create_Booking_With_Invalid_Payload():
     body = {
         "firstname": "Sara",
         "lastname": "Brown",
-        "totalprice": Mohammad,
+        "totalprice": "Mohammad",
         "depositpaid": True,
         "bookingdates": {
             "checkin": "2022-01-01",
