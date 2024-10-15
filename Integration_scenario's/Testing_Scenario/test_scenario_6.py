@@ -1,4 +1,5 @@
 import allure
+import requests
 
 @allure.title("#Test_Case -6")
 @allure.description("Trying to Update on a Delete ID -> 404")
