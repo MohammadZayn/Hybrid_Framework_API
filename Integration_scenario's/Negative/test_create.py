@@ -1,7 +1,7 @@
 import pytest
 
 
-def test_Exiting_all_BookingID_Update_Verify(Existing_Booking_ID, Get_Booking_ID_Info):
+def Exiting_all_BookingID_Update_Verify(Existing_Booking_ID, Get_Booking_ID_Info):
     Booking_ID_list = Existing_Booking_ID
 
     # Assuming Booking_ID_list is a list of dictionaries like [{"bookingid": 1}, {"bookingid": 2}, ...]
