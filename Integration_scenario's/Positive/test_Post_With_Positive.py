@@ -6,7 +6,6 @@ import requests
 @allure.description("This test case will help you to create the booking slot in a hotel")
 @allure.id("#TestCase - 1")
 @allure.tag("CRUD", "Positive", "Creating")
-@pytest.mark.CRUD
 def test_Create_Booking_With_Exact_Details():
     '''  URL
     Method - Post
