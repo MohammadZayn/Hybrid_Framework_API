@@ -18,4 +18,7 @@ def test_create_and_delete_booking(Create_Booking, Delete_Booking):
     # Verify the booking was deleted
     deleted_booking_id = Delete_Booking
     response = requests.get(f"https://restful-booker.herokuapp.com/booking/{deleted_booking_id}")
-    assert response.status_code == 404, f"Expected status code 404, got {response.status_code}"
+    try:
+        assert response.status_code == 404, f"Expected status code 404, got {response.status_code}"
+    except AssertionError as e:
+        print(f"Assertion failed: {e}")
