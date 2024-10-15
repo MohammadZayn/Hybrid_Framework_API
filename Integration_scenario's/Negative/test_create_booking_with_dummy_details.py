@@ -6,7 +6,6 @@ import requests
 @allure.description("This test case will help you to create the booking slot in a hotel")
 @allure.id("#TestCase - 1")
 @allure.tag("CRUD", "Negative", "Checking")
-@pytest.mark.CRUD
 def test_Create_Booking_With_No_Patload_or_Data():
     '''  URL
     Method - Post
@@ -27,7 +26,6 @@ def test_Create_Booking_With_No_Patload_or_Data():
     assert responsedata.status_code == 500
 
 
-@pytest.mark.CRUD
 @allure.title("#TC - 3 Creating a booking slot with total price as a string")
 @allure.description("This test case will help you to create the booking slot by using the total price as name")
 @allure.id("#TestCase - 1")
