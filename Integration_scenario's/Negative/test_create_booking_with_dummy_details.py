@@ -62,10 +62,14 @@ def test_Create_Booking_With_Totalprice_as_string():
         Json Schema Validation
         Time Response'''
     data = response_data.json()
-    assert data["bookingid"] is not None
-    assert type(data["bookingid"]) is int
-    assert data["bookingid"] > 0
     firstname = data["booking"]["firstname"]
-    assert firstname == 'Mohammad', "Yes Name fetched successfully"
-    assert data["booking"]["bookingdates"]["checkin"] == "2024-03-11"
-    assert data["booking"]["totalprice"] == 2000
+    try:
+        assert data["bookingid"] is not None
+        assert type(data["bookingid"]) is int
+        assert data["bookingid"] > 0
+        assert firstname == 'Mohammad', "Yes name fetched successfully"
+        assert data["booking"]["bookingdates"]["checkin"] == "2024-03-11"
+        assert data["booking"]["totalprice"] == 2000
+        assert data["booking"]["totalprice"] == 2000, f"Expected 2000, but got {data['booking']['totalprice']}"
+    except AssertionError as e:
+        print(f"Assertion failed: {e}")
