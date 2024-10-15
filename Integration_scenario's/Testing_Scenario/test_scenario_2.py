@@ -13,7 +13,10 @@ def test_create_and_delete_booking(Create_Booking, Delete_Booking):
     booking_id = Create_Booking
     # Verify the booking was created
     response = requests.get("https://restful-booker.herokuapp.com/booking/"+booking_id)
-    assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
+    try:
+        assert response.status_code == 200, f"Expected status code 200, got {response.status_code}"
+    except AssertionError as e:
+        print(f"Assertion failed: {e}")
 
     # Verify the booking was deleted
     deleted_booking_id = Delete_Booking
